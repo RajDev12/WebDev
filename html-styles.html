@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML styles</title>
+
+    <style>
+        body { background-color: YellowGreen; }
+		h1 { color: blue; }
+        p { color: red; }
+    </style>
+</head>
+<body>
+    <h1>HTML_CSS-Styles</h1>
+   
+<ol>
+    <li>Inline style</li>
+    <li>Embedded style</li>
+    <li>External style sheet</li>
+</ol>
+<pre>Note: The inline styles have the highest priority, and the external style sheets have the lowest.
+     It means if you specify styles for your paragraphs in both embedded and external style sheets, 
+    the conflicting style rules in the embedded style sheet would override the external style sheet.
+
+    NOTE=Using the inline styles are generally considered as a bad practice. 
+    Because style rules are embedded directly inside the html tag, it causes the presentation to become mixed with the content of the document, 
+    which makes updating or maintaining a website very difficult.
+
+    <h2>INLINE CSS</h2>
+</pre>
+    <h1 style="color:red; font-size:30px;">This is a heading</h1>
+<p style="color:green; font-size:18px;">This is a paragraph in green.</p>
+<div style="color:green; font-size:18px;">This is some text in green.</div>
+
+<h2>Embedded Style Sheets</h2>
+<pre>Embedded or internal style sheets only affect the document they are embedded in.
+    its written inside the the head tag in betweeen ostyle open and close
+</pre>
+<p>Embedded CSS paragraph with red color</p>
+
+<h2>External Style Sheet</h2>
+<p>External sheet is ideal when used same sheet for man pages</p>
+<h3>You can attach external style sheets in two ways — linking and importing:</h3>
+  <h4>Link Stylesheet</h4>
+    <!-- <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head> -->
+
+
+  <h4>Import Stylesheet</h4>
+    <!-- <style>
+        @import url("css/style.css");
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style> -->
+    <h3>Similarly, you can use the @import rule to import a style sheet within another style sheet.</h3>
+    <!--  @import url("css/layout.css");
+          @import url("css/color.css");
+          body {
+            color: blue;
+            font-size: 14px;
+           } -->
+
+           <pre>Note: All @import rules must occur at the start of the style sheet.
+             Any style rule defined in the style sheet itself override conflicting rule in the imported style sheets. 
+            The @import rule may cause performance issues, you should generally avoid importing style sheets</pre>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Creating Links in HTML</h1>
+<h3>A link has two ends, called anchors.
+    The link starts at the source anchor and points to the destination anchor, which may be any web resource, 
+    for example, an image, an audio or video clip, a PDF file, an HTML document or an element within the document itself, and so on. -->
+</h3>
+ <ol>
+    <a href="Demo.html" target="_blank">Link text</a>
+    <li> An unvisited link is underlined and blue. </li>
+    <li> A visited link is underlined and purple. </li>
+    <li>  An active link is underlined and red. </li>
+ </ol>
+ <pre id="SectionA"> Setting the Targets for Links
+ The target attribute tells the browser where to open the linked document.
+  There are four defined targets, and each target name starts with an underscore(_) character:
+ 
+ _blank — Opens the linked document in a new window or tab.
+ _parent — Opens the linked document in the parent window.
+ _self — Opens the linked document in the same window or tab as the source document. This is the default, hence it is not necessary to explicitly specify this value.
+ _top — Opens the linked document in the full browser window. 
+
+ <b>A target attribute with the value of “_parent” opens the linked document in the parent frame.
+     A target attribute with the value of “_top” opens the linked document in the full body of the window.
+    
+     <i><u>Creating Bookmark Anchors</i></u>
+     Creating bookmarks is a two-step process: first add the id attribute on the element where you want to jump, 
+     then use that id attribute value preceded by the hash sign (#) as the value of the href attribute of the <a> tag.
+        <a href="#SectionA">Jump to Section A</a>
+
+Tip: You can even jump to a section of another web page by specifying the URL of that page along with the anchor (i.e. #elementId) in the href attribute,
+         for example, <a href="mypage.html#topicA">Go to TopicA</a>.
+
+         <i><u>Creating Downloadable Link</i></u>
+         <a href="images\A24_12014332.png">Download Image</a>
+         <a href="images\test.zip">Download File</a> 
+
+         Note: 1.Only zip file downloaded automatically.
+               2. When you click a link that points to a PDF or image file, the file is not downloaded to your hard drive directly. 
+                 It will only open the file in your web browser. Further you can save or download it to your hard drive on a permanent basis.
+
+    </b>
+</pre>
+
+<p><strong>WARNING!</strong> Please proceed with caution.</p>
+<p>The concert will be held at <b>Hyde Park</b> in London.</p>
+<pre>Difference between strong and b tag
+    Both strong and b tags render the enclosed text in a bold typeface by default, but the strong tag indicates that its contents have strong importance,
+         whereas the b tag is simply used to draw the reader's attention without conveying any special importance</pre>
+<p>This is <i>italic text</i>.</p>
+<p>This is <em>emphasized text</em>.</p>
+<p>This is <mark>highlighted text</mark>.</p>
+<p>This is <code>computer code</code>.</p>
+<p>This is <small>smaller text</small>.</p>
+<p>This is <sub>subscript</sub> and <sup>supecript</sup> text.</p>
+<p>This is <del>deleted text</del>.</p>
+<p>This is <ins>inserted text</ins>.</p>
+
+<b>Formatting Quotations </b>
+<blockquote>
+    <p>Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.</p>
+    <cite>&mdash; Albert Einstein</cite>
+</blockquote>
+
+<h3>For short inline quotations, you can use the HTML q tag.</h3>
+
+ <p>According to the World Health Organization (WHO): <q>Health is a state of complete physical, mental, and social well-being.</q></p>
+,<h2>Making Contact address</h2>
+ <address>
+    Mozilla Foundation<br>
+    331 E. Evelyn Avenue<br>
+    Mountain View, CA 94041, USA
+    </address>
+</body>
+</html>
