@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML images</title>
+</head>
+<body>
+    <h1>Inserting Images into Web Pages</h1>
+<pre>Each image must carry at least two attributes: the src attribute, and an alt attribute.</pre>
+<img src="images/thumbnail-pic.png" alt="alternative text">
+ <h2>Setting the height and width of the images</h2>
+ <h3>Note: It's a good practice to specify both the width and height attributes for an image, so that browser can allocate that much of space for the image before it is downloaded. Otherwise, image loading may cause distortion or flicker in your website layout.</h3>
+ <img src="images/thumbnail-pic.png" alt="alternative text" width="50px" height="60px">
+ <img src="images/thumbnail-pic.png" alt="alternative text" style="height: 100px; width: 150px;">
+
+ <h1>Using the HTML5 Picture Element</h1>
+ <pre>
+Sometimes, scaling an image up or down to fit different devices (or screen sizes) doesn't work as expected. 
+Also, reducing the image dimension using the width and height attribute or property doesn't reduce the original file size. 
+To address these problems HTML5 has introduced the &lt;picture&gt; tag 
+    that allows you to define multiple versions of an image to target different types of devices.
+<p>
+    The &lt;picture&gt; element contains zero or more &lt;source&gt; elements, 
+        each referring to different image source, and one &lt;img&gt; element at the end.
+         Also each &lt;source&gt; element has the media attribute which specifies a media condition (similar to the media query) 
+         that is used by the browser to determine when a particular source should be used. Let's try out an example:
+</p></pre>
+<h2>Resize the browser windows to see the Difference</h2>
+<picture>
+    <source media="(min-width: 1000px)" srcset="images/thumbnail-pic.png">  <!--1st choice-->
+    <source media="(max-width: 500px)" srcset="images/A24_12014332.png">    <!--2nd choice-->
+    <img src="images\A24_12014332.png" alt="My logo">  <!--final if both above source failed to give desired output-->
+    <h2>Note: The browser will evaluate each child &lt;source&gt; element and choose the best match among them;
+         if no matches are found, the URL of the &lt;img&gt; element's src attribute is used. 
+        Also, the &lt;img&gt; tag must be specified as the last child of the &lt;picture&gt; element.</h2>
+</picture>
+</body>
+</html>
