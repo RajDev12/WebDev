@@ -1,5 +1,5 @@
-Also, in HTML5 the <b> and <i> tags have been redefined, earlier they don't have semantic meaning.
-There are several attributes in HTML5 that do not consist of name/value pairs but consist of just a name. 
-        Such attributes are called Boolean attributes. Examples of some commonly used Boolean attributes are checked, disabled, readonly, required, etc. -->
+1. Also, in HTML5 the <b> and <i> tags have been redefined, earlier they don't have semantic meaning.
+2. There are several attributes in HTML5 that do not consist of name/value pairs but consist of just a name. 
+   Such attributes are called Boolean attributes. Examples of some commonly used Boolean attributes are checked, disabled, readonly, required, etc. -->
    Eg= <input type="email" required>
-
+3.Using the HTML5 Picture Element to have options for a particular image based on the screen size
